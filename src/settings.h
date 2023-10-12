@@ -1,6 +1,6 @@
 #ifndef _SETTINGS_H_
 #define _SETTINGS_H_
-
+    void settingsInit();
     class settings {
     public: 
        const char* wifi_ssid;

@@ -9,8 +9,4 @@
 
     extern settings Settings;
 
-    void settingsInit();
-
-    
-
 #endif

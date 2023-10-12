@@ -3,8 +3,9 @@
 void setup() {
   // put your setup code here, to run once
   Serial.begin(9600);
-  settingsInit();
-  wifi_con();
+  settingsInit(); // Initialize Settings
+  wifi_con(); // Initialize wifi connection
+  mqtt_con(); // Initialize mqtt connection
 }
 
 void loop() {
