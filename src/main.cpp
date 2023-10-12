@@ -7,6 +7,8 @@ void setup() {
   settingsInit(); // Initialize Settings
   wifi_con(); // Initialize wifi connection
   mqtt_con(); // Initialize mqtt connection
+  wifi_recon();
+  mqtt_recon();
 }
 
 void loop() {
