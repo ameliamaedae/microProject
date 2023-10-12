@@ -4,10 +4,13 @@
 settings Settings;
 
 void settingsInit(){
-    Settings.wifi_ssid = "";
+
+    Serial.println("INITALIZING SETTINGS");
+
+    Settings.wifi_ssid = "DCTS";
     Settings.wifi_passwd = "";
 
-    Settings.mqtt_entity_name = "";
+    Settings.mqtt_entity_name = "Placeholder";
     Settings.mqtt_passwd = "";
     Settings.mqtt_server = "";
     Settings.mqtt_username = "";
