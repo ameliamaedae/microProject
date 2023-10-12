@@ -11,3 +11,11 @@ void mqtt_con(){
     Serial.println("MQTT_CON()");
     Serial.println(Settings.mqtt_entity_name);
 }
+
+void wifi_recon(){
+    
+}
+
+void mqtt_recon(){
+    
+}
