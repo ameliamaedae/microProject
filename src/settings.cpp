@@ -4,8 +4,8 @@
 settings Settings;
 
 void settingsInit(){
-    Settings.wifi_ssid = "TheMNet";
-    Settings.wifi_passwd = "421E2E84A4";
+    Settings.wifi_ssid = "";
+    Settings.wifi_passwd = "";
 
     Settings.mqtt_entity_name = "";
     Settings.mqtt_passwd = "";
