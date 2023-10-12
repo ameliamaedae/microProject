@@ -20,7 +20,8 @@ void wifi_con(){
 void mqtt_con(){
     // WiFi.begin(Settings.wifi_ssid, Settings.wifi_passwd);
     Serial.println("MQTT_CON()");
-    Serial.println(Settings.mqtt_entity_name);
+    client.setServer(Settings.mqtt_server, 1883);
+    client.connect(Settings.mqtt_entity_name, Settings.mqtt_username, Settings.mqtt_passwd);
 }
 
 void wifi_recon(){

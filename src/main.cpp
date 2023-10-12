@@ -13,4 +13,5 @@ void loop() {
   // put your main code here, to run repeatedly:
   Serial.println("We are in the loop function");
   delay(5000);
+  client.publish("Basement/Humidity", "resultRH");
 }
