@@ -9,6 +9,6 @@
 
     extern settings Settings;
     extern WiFiClient wifiC;
-    extern PubSubClient client(wifiC);
+    extern PubSubClient client;
 
 #endif
