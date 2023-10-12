@@ -3,6 +3,9 @@
 
 settings Settings;
 
+WiFiClient wifiC;
+PubSubClient client(wifiC);
+
 void settingsInit(){
 
     Serial.println("INITALIZING SETTINGS");

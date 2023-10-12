@@ -8,5 +8,7 @@
     #include "wifi_mqtt.h"
 
     extern settings Settings;
+    extern WiFiClient wifiC;
+    extern PubSubClient client(wifiC);
 
 #endif
