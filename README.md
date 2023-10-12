@@ -6,7 +6,7 @@
 
 ### Goals (List updated 10/12/2023)
 - [] Implement basic MQTT functionality
-    - [] Have user settings in their own file to facilitate easier configuration 
+    - [x] Have user settings in their own file to facilitate easier configuration 
     - [] MQTT and WIFI connection functions seperated from main.cpp 
         - [] MQTT/WIFI Initialize functions and reconnect functions
 - []
