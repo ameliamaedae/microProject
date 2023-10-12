@@ -13,9 +13,12 @@ void mqtt_con(){
 }
 
 void wifi_recon(){
-    
+    Serial.println("WIFI_RECON()");
+    Serial.println(Settings.wifi_ssid);
 }
 
 void mqtt_recon(){
+    Serial.println("MQTT_RECON()");
+    Serial.println(Settings.mqtt_entity_name);
     
 }
