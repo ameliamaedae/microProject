@@ -1,9 +1,20 @@
 #include "common.h"
 
 void wifi_con(){
-    // WiFi.begin(Settings.wifi_ssid, Settings.wifi_passwd);
     Serial.println("WIFI_CON()");
     Serial.println(Settings.wifi_ssid);
+    WiFi.setHostname(Settings.mqtt_entity_name);
+    Serial.println("Attempting to connect");
+        WiFi.begin(Settings.wifi_ssid, Settings.wifi_passwd);
+    while (WiFi.status() != WL_CONNECTED) {
+      delay(500);
+      Serial.println(".");
+    }
+    WiFi.setHostname(Settings.mqtt_entity_name);
+    Serial.println("Connected!");
+    Serial.print(WiFi.localIP());
+    Serial.print(" - ");
+    Serial.println(WiFi.hostname());
 }
 
 void mqtt_con(){
