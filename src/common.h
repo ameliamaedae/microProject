@@ -6,6 +6,7 @@
     #include <ESP8266WiFi.h>
     #include "settings.h"
     #include "wifi_mqtt.h"
+    #include <Adafruit_NeoPixel.h>
 
     extern settings Settings;
     extern WiFiClient wifiC;
