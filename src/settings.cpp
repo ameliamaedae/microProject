@@ -6,9 +6,14 @@ settings Settings;
 WiFiClient wifiC;
 PubSubClient client(wifiC);
 
+Adafruit_SHT31 sht31 = Adafruit_SHT31();
+
 void settingsInit(){
 
     Serial.println("INITALIZING SETTINGS");
+
+    sht31.begin();
+    sht31.heater(false);
 
     Settings.wifi_ssid = "";
     Settings.wifi_passwd = "";
