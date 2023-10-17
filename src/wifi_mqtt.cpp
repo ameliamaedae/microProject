@@ -1,7 +1,6 @@
 #include "common.h"
 
 void wifi_con(){
-    //Set LED to blue
     Serial.println("WIFI_CON()");
     Serial.println(Settings.wifi_ssid);
     WiFi.setHostname(Settings.mqtt_entity_name);
@@ -19,8 +18,6 @@ void wifi_con(){
 }
 
 void mqtt_con(){
-    //Set LED to purple
-    // WiFi.begin(Settings.wifi_ssid, Settings.wifi_passwd);
     Serial.println("MQTT_CON()");
     client.setServer(Settings.mqtt_server, 1883);
     while (!client.connected()) {

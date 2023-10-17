@@ -1,7 +1,6 @@
 #include "main.h"
 
 void setup() {
-  // put your setup code here, to run once
   settingsInit(); // Initialize Settings
   Serial.begin(9600);
   Serial.println("");
@@ -10,15 +9,18 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Reconnects Start
   if (!WiFi.isConnected()){
     wifi_con(); 
   }
   if (!client.connected()){
     mqtt_con();
   }
+  // Reconnects End
+
   Serial.println("We are in the loop function");
 
+  // Sensor Readings Start
   float t = sht31.readTemperature();
   float h = sht31.readHumidity();
 
@@ -30,6 +32,8 @@ void loop() {
   char resultRH[2];
   dtostrf(h, 6, 2, resultRH);
   client.publish("Basement/Humidity", resultRH);
+  // Sensor Readings End
+
 
   delay(5000);
 
