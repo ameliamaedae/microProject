@@ -10,3 +10,4 @@
     - [x] MQTT and WIFI connection functions seperated from main.cpp 
         - [] (SCRAPPED) MQTT/WIFI Initialize functions and reconnect functions
 - [] Add RGB LED indicator to board to help with debugging. 
+- [] Focus on program modularity. 
