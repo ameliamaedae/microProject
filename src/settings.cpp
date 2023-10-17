@@ -19,7 +19,7 @@ void settingsInit(){
     Settings.wifi_passwd = "";
 
     Settings.mqtt_entity_name = "";
-    Settings.mqtt_passwd = "";
     Settings.mqtt_server = "";
+    Settings.mqtt_passwd = "";
     Settings.mqtt_username = "";
 }
